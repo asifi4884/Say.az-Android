@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.percent.ReportFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutReportType"
+            style="@style/Theme.TextInputLayoutStyleExposed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="@string/msg_report_type"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutYear"
+            style="@style/Theme.TextInputLayoutStyleExposed"
+            android:layout_width="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/textInputLayoutTerm"
+            app:layout_constraintStart_toStartOf="@id/textInputLayoutReportType"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutReportType">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="@string/msg_year"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTerm"
+            style="@style/Theme.TextInputLayoutStyleExposed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="@id/textInputLayoutReportType"
+            app:layout_constraintStart_toEndOf="@id/textInputLayoutYear"
+            app:layout_constraintTop_toTopOf="@id/textInputLayoutYear">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="@string/msg_term"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutInclude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/textInputLayoutReportType"
+            app:layout_constraintStart_toStartOf="@id/textInputLayoutReportType"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutYear">
+
+            <include
+                android:id="@+id/includeTaxReport"
+                layout="@layout/item_tax_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/includeUniqueDeclaration"
+                layout="@layout/item_unique_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/includeIncomeTaxDeclaration"
+                layout="@layout/item_income_tax_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSend"
+            style="@style/Theme.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/action_send"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutInclude"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutInclude"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutInclude"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/action_cancel"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/buttonSend"
+            app:layout_constraintStart_toStartOf="@+id/buttonSend"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSend"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

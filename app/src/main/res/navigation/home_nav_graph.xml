@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/account_nav_graph">
+
+    <include app:graph="@navigation/account_nav_graph" />
+    <include app:graph="@navigation/dashboard_nav_graph" />
+    <include app:graph="@navigation/invoice_nav_graph" />
+    <include app:graph="@navigation/reports_nav_graph" />
+    <include app:graph="@navigation/settings_nav_graph" />
+    <dialog
+        android:id="@+id/choiceFragment"
+        android:name="com.niyazi.say_az.ui.dialog.choice.ChoiceFragment"
+        tools:layout="@layout/fragment_choice" >
+        <argument
+            android:name="type"
+            app:argType="com.niyazi.say_az.utils.ListDialog" />
+        <argument
+            android:name="values"
+            app:argType="string[]" />
+        <argument
+            android:name="previousValue"
+            app:argType="string" />
+    </dialog>
+    <action
+        android:id="@+id/action_global_choiceFragment"
+        app:destination="@id/choiceFragment" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.niyazi.say_az.ui.fragment.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <action
+        android:id="@+id/action_global_notificationsFragment"
+        app:destination="@id/notificationsFragment" />
+</navigation>

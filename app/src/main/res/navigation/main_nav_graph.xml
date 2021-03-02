@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.niyazi.say_az.ui.fragment.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_introParentFragment"
+            app:destination="@id/introParentFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/introParentFragment"
+        android:name="com.niyazi.say_az.ui.fragment.intro.IntroParentFragment"
+        tools:layout="@layout/fragment_intro_parent" />
+    <include app:graph="@navigation/login_nav_graph" />
+    <dialog
+        android:id="@+id/successOrErrorFragment"
+        android:name="com.niyazi.say_az.ui.dialog.success_error.SuccessOrErrorFragment"
+        tools:layout="@layout/fragment_success_or_error">
+        <argument
+            android:name="bodyText"
+            app:argType="string" />
+        <argument
+            android:name="dialogType"
+            app:argType="com.niyazi.say_az.utils.DialogDesign" />
+    </dialog>
+    <action
+        android:id="@+id/action_global_successOrErrorFragment2"
+        app:destination="@id/successOrErrorFragment" />
+    <include app:graph="@navigation/home_nav_graph" />
+    <action
+        android:id="@+id/action_global_home_nav_graph"
+        app:destination="@id/home_nav_graph"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/main_nav_graph"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_login_nav_graph"
+        app:destination="@id/login_nav_graph"
+        app:popUpTo="@id/main_nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>

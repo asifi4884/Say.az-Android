@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_nav_graph"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.niyazi.say_az.ui.fragment.register.RegisterFragment"
+        android:label="@string/msg_back"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_registerPersonalInfoFragment"
+            app:destination="@id/registerPersonalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPersonalInfoFragment"
+        android:name="com.niyazi.say_az.ui.fragment.register_personal_info.RegisterPersonalInfoFragment"
+        android:label="@string/msg_back"
+        tools:layout="@layout/fragment_register_personal_info" >
+        <action
+            android:id="@+id/action_registerPersonalInfoFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.niyazi.say_az.ui.fragment.create_account.CreateAccountFragment"
+        android:label="@string/msg_back"
+        tools:layout="@layout/fragment_create_account"/>
+</navigation>

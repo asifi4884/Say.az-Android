@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_nav_graph"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.niyazi.say_az.ui.fragment.settings.SettingsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_myBankAccountsFragment"
+            app:destination="@id/myBankAccountsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_infoAboutAppFragment"
+            app:destination="@id/infoAboutAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBankAccountsFragment"
+        android:name="com.niyazi.say_az.ui.fragment.my_bank_accounts.MyBankAccountsFragment"
+        android:label="@string/title_my_bank_accounts"
+        tools:layout="@layout/fragment_my_bank_accounts" >
+        <action
+            android:id="@+id/action_myBankAccountsFragment_to_addAccountFragmentMyBankAccounts"
+            app:destination="@id/addAccountFragmentMyBankAccounts" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoAboutAppFragment"
+        android:name="com.niyazi.say_az.ui.fragment.info_about_app.InfoAboutAppFragment"
+        android:label="@string/msg_about_app"
+        tools:layout="@layout/fragment_info_about_app" />
+    <fragment
+        android:id="@+id/addAccountFragmentMyBankAccounts"
+        android:name="com.niyazi.say_az.ui.fragment.add_account.AddAccountFragment"
+        android:label="@string/title_add_account"
+        tools:layout="@layout/fragment_add_account" />
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/invoice_nav_graph"
+    app:startDestination="@id/invoiceFragment">
+
+    <fragment
+        android:id="@+id/invoiceFragment"
+        android:name="com.niyazi.say_az.ui.fragment.invoice.InvoiceFragment"
+        android:label=""
+        tools:layout="@layout/fragment_invoice" >
+        <action
+            android:id="@+id/action_invoiceFragment_to_sendInvoiceFragment"
+            app:destination="@id/sendInvoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendInvoiceFragment"
+        android:name="com.niyazi.say_az.ui.fragment.send_invoice.SendInvoiceFragment"
+        android:label="@string/msg_send_invoice"
+        tools:layout="@layout/fragment_send_invoice" />
+</navigation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/textViewFullName">
+            <CustomAttribute
+                app:attributeName="textSize"
+                app:customFloatValue="24" />
+
+        </Constraint>
+
+        <Constraint android:id="@+id/textViewId">
+
+            <CustomAttribute
+                app:attributeName="textSize"
+                app:customFloatValue="14" />
+
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/imageViewProfile"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <Constraint android:id="@+id/textViewFullName">
+
+            <CustomAttribute
+                app:attributeName="textSize"
+                app:customFloatValue="14" />
+        </Constraint>
+
+        <Constraint android:id="@+id/textViewId">
+
+            <CustomAttribute
+                app:attributeName="textSize"
+                app:customFloatValue="10" />
+
+        </Constraint>
+
+        <Constraint android:id="@+id/imageViewCamera"
+          android:visibility="invisible" />
+
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="1000">
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/scrollViewItems"
+            app:touchAnchorSide="top" />
+    </Transition>
+
+</MotionScene>

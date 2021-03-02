@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">say_az</string>
+    <string name="action_skip">Keç-ru</string>
+    <string name="msg_new_and_simple">Yeni və sadə!-ru</string>
+    <string name="msg_useful">Daha rahat!-ru</string>
+    <string name="msg_efficient">Daha sərfəli!-ru</string>
+    <string name="action_asan_pass">Asan Pass-ru</string>
+    <string name="action_asan_login">asan login-ru</string>
+    <string name="action_register">Qeydiyyatdan keç-ru</string>
+    <string name="msg_enter">Daxil ol-ru</string>
+    <string name="msg_main_login_info">ASAN imza vasitəsəilə və ya asan pass ilə rahatlıqla platformaya daxil ola bilərsiniz.-ru</string>
+    <string name="msg_phone">Telefon-ru</string>
+    <string name="msg_user_id">İstifadəçi ID-si-ru</string>
+    <string name="msg_info">Məlumat-ru</string>
+    <string name="msg_asan_login">Asan login-ru</string>
+    <string name="msg_login_info">Zəhmət olmasa, asan nömrənizi və istifadəçi ID-sini daxil edin.-ru</string>
+    <string name="msg_back">Geri-ru</string>
+    <string name="msg_register">Qeydiyyat-ru</string>
+    <string name="msg_register_info">Qeydiyyatdan keçmək, zəhmət olmasa, asan nömrənizi daxil edin.-ru</string>
+    <string name="msg_asan_number">Asan nömrə-ru</string>
+    <string name="action_next">Növbəti-ru</string>
+    <string name="msg_upload_img">Şəkil yüklə-ru</string>
+    <string name="msg_name">Ad-ru</string>
+    <string name="msg_surname">Soyad-ru</string>
+    <string name="msg_fin">Fin-ru</string>
+    <string name="msg_activity_type">Fəaliyyət növü-ru</string>
+    <string name="msg_create_bank_account">Bank hesabı aç-ru</string>
+    <string name="msg_create_account_info">Bu bölmədə istənilən bankda hesab açaraq kart sifarişi göndərə bilərsiniz.-ru</string>
+    <string name="msg_bank_choice">Bank seç-ru</string>
+    <string name="action_send">Göndər-ru</string>
+    <string name="msg_bank_name">Bank adı-ru</string>
+    <string name="title_congratulation">Təbriklər-ru</string>
+    <string name="action_ok">OK-ru</string>
+    <string name="error_title">Xəta!-ru</string>
+    <string name="error_user_credential">Yanlış telefon nömrəsi yaxud istifadəçi idsi</string>
+    <string name="msg_account_add_info">Gəlirlərinizi görmək üçün bank hesabı əlavə edin.</string>
+    <string name="action_add">Əlavə et</string>
+    <string name="msg_profile_info">Profil məlumatları</string>
+    <string name="msg_designer">Designer</string>
+    <string name="msg_tax_info">Vergi hesabatlarım</string>
+    <string name="msg_bank_account">Bank hesablarım</string>
+    <string name="msg_send_mail">Vergilər Nazirliyinə mail yaz</string>
+    <string name="msg_language">Dil</string>
+    <string name="msg_mode">Mode</string>
+    <string name="msg_info_about_app">Tətbiq haqqında məlumat</string>
+    <string name="msg_delete_profile">Profili sil</string>
+    <string name="title_settings">Tənzimləmələr-ru</string>
+    <string name="action_cancel">Ləğv et</string>
+    <string name="action_choose">Seç</string>
+    <string name="msg_az_lang">Azərbaycanca</string>
+    <string name="msg_en_lang">İngiliscə</string>
+    <string name="msg_ru_lang">Rusca</string>
+    <string name="msg_card_number">Kartın nömrəsi</string>
+    <string name="msg_end_date">Bitmə tarixi</string>
+    <string name="msg_cvc">CVCCVV</string>
+    <string name="title_add_account">Hesab əlavə et</string>
+    <string name="msg_dashboard">Dashboard</string>
+    <string name="msg_yearly">İllik</string>
+    <string name="msg_mode_night">Gecə</string>
+    <string name="msg_mode_light">İşıqlı</string>
+    <string name="msg_mode_default">Default</string>
+    <string name="msg_receipts_from_others">Gələnlər</string>
+    <string name="msg_search">Axtar…</string>
+    <string name="msg_invoices">Qaimələr</string>
+
+    <string-array name="language_list">
+        <item>@string/msg_en_lang</item>
+        <item>@string/msg_az_lang</item>
+        <item>@string/msg_ru_lang</item>
+    </string-array>
+
+    <string-array name="mode_list">
+        <item>@string/msg_mode_default</item>
+        <item>@string/msg_mode_light</item>
+        <item>@string/msg_mode_night</item>
+    </string-array>
+    <string name="msg_receipts_send_by_me">Göndərdiklərim</string>
+    <string name="msg_send_invoice">Qaimə göndər</string>
+    <string name="msg_invoice_type">Qaimənin növü</string>
+    <string name="msg_voen">VÖEN</string>
+    <string name="msg_worth">Məbləğ</string>
+    <string name="msg_period">Period</string>
+    <string name="msg_with_voen">VÖEN ilə</string>
+    <string name="msg_without_voen">VÖEN-siz</string>
+    <string name="title_report">Hesabat</string>
+    <string name="msg_report_type">Hesabat növü</string>
+    <string name="msg_year">İl</string>
+    <string name="msg_term">Rüb</string>
+    <string name="mag_term_income">Dövr ərzində gəlir</string>
+    <string name="msg_tax_value">Vergi məbləği</string>
+    <string name="msg_activities">Fəaliyyət</string>
+    <string name="msg_income">Gəlirlər</string>
+    <string name="msg_expenses">Xərclər</string>
+    <string name="msg_january">Yanvar</string>
+    <string name="msg_february">Fevral</string>
+    <string name="msg_march">Mart</string>
+    <string name="msg_april">Aprel</string>
+    <string name="msg_may">May</string>
+    <string name="msg_june">İyun</string>
+    <string name="msg_july">İyul</string>
+    <string name="msg_august">Avqust</string>
+    <string name="msg_september">Sentyabr</string>
+    <string name="msg_october">Oktyabr</string>
+    <string name="msg_november">Noyabr</string>
+    <string name="msg_december">Dekabr</string>
+    <string name="msg_term_tax_report">Cari vergi arayışı</string>
+    <string name="msg_unique_declaration">Vahid bəyannamə</string>
+    <string name="msg_income_tax">Gəlir vergisi bəyanaməsi</string>
+    <string name="msg_yes_activities">Fəaliyyət olub</string>
+    <string name="msg_no_activities">Fəaliyyət olmayıb</string>
+    <string name="title_notifications">Bildirişlər</string>
+    <string name="msg_monthly">Aylıq</string>
+    <string name="error_empty_field">Zəhmət olmasa xananı doldurun</string>
+    <string name="error_card_number">Zəhmət olmasa düzgün card nömrəsi daxil edin</string>
+    <string name="error_cvc">Zəhmət olmasa düzgün cvc daxil edin</string>
+    <string name="action_add_new_one">Yenisini əlavə et</string>
+    <string name="title_my_bank_accounts">Bank hesablarım</string>
+    <string name="msg_about_app">About app</string>
+    <string name="msg_no_application">Tətbiq tapılmadı</string>
+    <string name="msg_logout">Çıxış</string>
+    <string name="title_reports">Hesabatlar</string>
+</resources>
